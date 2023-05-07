@@ -1,0 +1,87 @@
+.about_container_adp{
+    display: flex;
+    justify-content: center;
+background-color: #27282c;
+
+
+ 
+}
+.about_container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+   
+}
+.about_main_container{
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    
+    column-gap: 100px;
+    width: 100%;
+    margin: 150px 0;
+}
+.about_name{
+    font-family: 'ROSHI'  ;
+    font-size: 55px;
+    padding-bottom: 100px;
+    width: 360px;
+  
+}
+.about_text{
+    font-size: 25px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.about_content{
+    max-width: 500px;
+    color: white;
+   
+  
+}
+.icon_container img{
+    width:   350px;
+    
+    margin-top: 140px;
+}
+
+
+@media(max-width:1500px){
+    .hr_line_y{
+        display: none;
+    }
+}
+@media(max-width:950px){
+.about_main_container{
+flex-direction: column;
+align-items: center;
+}
+.about_content{
+    text-align: center;
+}
+.about_name{
+    width: 100%;
+}
+.icon_container img{
+    width: 250px;
+}
+}
+@media(max-width:550px){
+    .about_name{
+        font-size: 40px;
+    }
+    .about_text{
+        font-size: 22px;
+    }
+    .icon_container img{
+        width: 200px;
+    }
+    .about_main_container{
+        padding: 0 50px;
+        margin: 50px 0;
+    }
+}
+

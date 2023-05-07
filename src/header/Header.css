@@ -1,0 +1,70 @@
+@font-face {
+    font-family:'ROSHI';
+    src: url('../fonts/13_ROSHI.TTF');
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_container_adp{
+    display: flex;
+    justify-content: center;
+}
+
+.header_container{
+
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), 
+    url('../img/blake-connally-B3l0g6HLxr8-unsplash.jpg');
+    background-color:rgba(0, 0, 0, .9);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+
+}
+.header_name{
+    color: aliceblue;
+    font-family:'ROSHI';
+    font-size: 80px;
+    border-radius: 50px;
+    text-shadow: 0 0 5px white,0 0 10px #000000,0 0 15px #b4b4b4,0 0 20px white;
+
+   
+    text-align: center;
+ 
+}
+
+.header_name_down{
+    color: aliceblue;
+    font-family:'ROSHI';
+    font-size: 20px;
+   margin-bottom: 200px;
+    text-align: center;
+    text-shadow: 0 0 5px white,0 0 10px #000000,0 0 15px #000000,0 0 20px white;
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+.header_name_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+    height: 100vh;
+}
+@media(max-width:450px){
+.header_name{
+    font-size: 65px;
+}
+.header_name_down{
+    font-size: 17px;
+}
+}
