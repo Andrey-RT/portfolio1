@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #9c9c9c;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #565656;
+   
+  }
+  .App{
+    scroll-behavior: smooth;
+  }
+

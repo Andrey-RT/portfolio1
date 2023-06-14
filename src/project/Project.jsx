@@ -1,4 +1,4 @@
-import React from 'react';
+import {React ,useEffect} from 'react';
 import { Pagination, A11y } from 'swiper';
 import './Project.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,8 +10,13 @@ import 'swiper/css';
 
 import 'swiper/css/pagination';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
     return (
         <div className='about_container_adp'>
             <div className="about_container">
@@ -19,11 +24,11 @@ const Project = () => {
             <div className="project_main_container">
            
                 <div className="about_content">
-                    <h1 className='about_name'>My project</h1>
+                    <h1 data-aos="fade-down" className='about_name'>My project</h1>
                    
                 </div>
-                <div className="slider_container">
-                <Swiper
+                <div  data-aos="fade-right"  className="slider_container">
+                <Swiper 
       // install Swiper modules
       modules={[ Pagination,  A11y]}
       spaceBetween={50}
